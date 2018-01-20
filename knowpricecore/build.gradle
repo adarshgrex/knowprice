@@ -1,0 +1,10 @@
+apply plugin: 'java'
+sourceSets {
+    main.java.srcDirs += '/home/adarsh/AndroidStudioProjects/practice/KnowPrice/knowpricecore/Test'
+}
+sourceCompatibility = JavaVersion.VERSION_1_7
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/gson-2.2.2.jar')
+    compile files('libs/java-json.jar')
+}
